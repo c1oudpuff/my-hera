@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+		@font-face {
+		    font-family: 'SUIT-Medium';
+		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		@font-face {
+		    font-family: 'SUIT-SemiBold';
+		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		@font-face {
+		    font-family: 'SUIT-Bold';
+		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		
+		/* 기본적인 페이지 스타일 */
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'SUIT-SemiBold';
+}
+
+/* 폼 요소 */
+form .form-control {
+    border-radius: 0; /* 직각 느낌 */
+    transition: border-color 0.3s ease-in-out;
+}
+
+form .form-control:focus {
+    border-color: #fff;
+}
+
+/* 버튼 스타일 */
+button.btn {
+    border-radius: 0; /* 직각 느낌 */
+    font-weight: bold;
+}
+
+/* 폼 레이아웃 */
+.container {
+    max-width: 600px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+		

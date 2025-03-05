@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+		@font-face {
+		    font-family: 'SUIT-Medium';
+		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		@font-face {
+		    font-family: 'SUIT-SemiBold';
+		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		@font-face {
+		    font-family: 'SUIT-Bold';
+		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		
+		body {
+			font-family: 'SUIT-Medium';
+			overflow-x: hidden;
+		}
+
+        .product {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        }
+        .product-number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .carousel-caption {
+        	color: black;
+        	left: 11%;
+        	top: 45%;
+        }
+        .carousel-caption h2 {
+        	font-family: 'SUIT-Bold';
+        }
+        .cs-text-white {
+       		color: white;
+       	}
+       	.product img {
+	        max-width: 90%;  /* 이미지 크기 조절 */
+	        height: auto;    /* 비율 유지 */
+	        display: block;
+	        margin: 0 auto;  /* 가운데 정렬 */
+	        margin-bottom: 5%;
+	        background-color: #F4F4F4;
+	    }
+	    
+	    .section {
+	    	position: relative;
+	    }
+	    .section #section1 {
+	    	font-family: 'SUIT-Bold';
+	    	position: absolute;
+	    	top: 50%;
+	    	left: 12%;
+	    }
+	    .section #section2 {
+	    	font-family: 'SUIT-Bold';
+	    	position: absolute;
+	    	top: 50%;
+	    	left: 12%;
+	    }
+	    .section #section3 {
+	    	font-family: 'SUIT-Bold';
+	    	position: absolute;
+	    	top: 50%;
+	    	right: 12%;
+	    }
+	    
+	    #sns_account {
+        	font-family: 'SUIT-Bold';
+	    }
+	    
+	    .small {
+	    	height: 50%;
+	    	object-fit: cover;
+	    }
+	    
+	    .section4 {
+	    	font-family: 'SUIT-Bold';
+	    	position: absolute;
+	    	top: 50%;
+	    	left: 12%;
+	    }

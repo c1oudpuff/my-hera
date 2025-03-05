@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+		@font-face {
+		    font-family: 'SUIT-Medium';
+		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		@font-face {
+		    font-family: 'SUIT-SemiBold';
+		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		@font-face {
+		    font-family: 'SUIT-Bold';
+		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+/* 기본 스타일 */
+body {
+    font-family: 'SUIT-Medium';
+    background-color: #f8f9fa; /* 배경 밝은 색 */
+    color: #333; /* 어두운 글자 색 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 상품 페이지 컨테이너 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 상품 제목 */
+.product-title {
+	font-family: 'SUIT-Bold';
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* 상품 카테고리, 가격, 설명 */
+.product-category,
+.product-price,
+.product-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* 상품 이미지 */
+img.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 0; /* 직각 모서리 */
+}
+
+/* 상품 정보 레이아웃 */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 버튼 스타일 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 0;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #444;
+    border-color: #444;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .col-md-5, .col-md-7 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-title {
+        font-size: 1.8rem;
+    }
+
+    .product-price {
+        font-size: 1rem;
+    }
+}
